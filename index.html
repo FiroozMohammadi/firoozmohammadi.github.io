@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firooz Ahmad Muhammad | Software Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Theme Toggle Button -->
+  <button class="theme-toggle" id="themeToggle">
+    <i class="fas fa-sun"></i>
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">Firooz<span>.</span></a>
+      <div class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ========== HOME SECTION ========== -->
+    <section id="home" class="section" style="padding: 90px 0 60px;">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="badge-pulse"></span>
+              <span>Available for work</span>
+            </div>
+            <h1 class="hero-title">
+              Hi, I'm <span class="title-name">Firooz Ahmad</span>
+              <span class="title-role">Software Developer</span>
+            </h1>
+            <p class="hero-desc">Software developer focused on building modern, clean, and user-centered digital experiences with scalable and efficient solutions.</p>
+            <div class="hero-buttons">
+              <button class="btn btn-primary" id="downloadCVBtn">
+                <i class="fas fa-file-pdf"></i> Download CV
+              </button>
+              <a href="#projects" class="btn btn-outline">
+                View Projects <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat">
+                <span class="stat-number">4+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">7+</span>
+                <span class="stat-label">Projects</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Technologies</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="image-wrapper">
+              <img src="assets/images/profile.png" alt="Firooz Ahmad Muhammad" id="profileImg" onerror="this.src='https://placehold.co/300x300/6366f1/white?text=Firooz'">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get to know me</span>
+          <h2 class="section-title">About <span class="title-gradient">Me</span></h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="about-icon"><i class="fas fa-user"></i></div>
+            <h3>Who I Am</h3>
+            <p>I'm a software developer from Herat, Afghanistan, passionate about building modern applications, learning new technologies, and delivering high-quality software solutions.</p>          </div>
+          <div class="about-card">
+            <div class="about-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h3>Education</h3>
+            <p>Bachelor of Software Engineering, Ghalib University (2017–2020). Certified in English (B2 level) and completed multiple ICDL courses in computer skills and productivity tools.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon"><i class="fas fa-briefcase"></i></div>
+            <h3>Experience</h3>
+            <p>Software Developer at Nab Avaran Afghan Company. Developed and maintained software applications, improved performance, fixed bugs, and implemented new features using clean and efficient code.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon"><i class="fas fa-bullseye"></i></div>
+            <h3>My Goals</h3>
+            <p>Building impactful solutions, contributing to open-source projects, and continuously improving full-stack development skills to create innovative and user-focused software products.</p>
+          </div>
+        </div>
+        <div class="about-details">
+         <div class="details-left">
+  <h3><i class="fas fa-code"></i> What I Do</h3>
+        <p>
+          I design, develop, and maintain software applications using clean and efficient code.  
+          I collaborate with teams, participate in system design, and ensure high-quality software delivery.  
+          My work also includes debugging, improving performance, developing APIs, writing documentation, and implementing new features.
+        </p>
+      </div>
+          <div class="details-right">
+            <h3><i class="fas fa-map-marker-alt"></i> Personal Info</h3>
+            <ul class="info-list">
+              <li><span>📍 From:</span> Herat, Afghanistan → Istanbul, Turkey</li>
+              <li><span>📅 Born:</span> December 2, 1993</li>
+              <li><span>📧 Email:</span> firoozmohammad555@gmail.com</li>
+              <li><span>📱 Phone:</span> (+90) 5538020212</li>
+              <li><span>🌐 Languages:</span> Dari (Native), English (intermediate), Pashto (A2)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS SECTION ========== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">My technical expertise</span>
+          <h2 class="section-title">Skills & <span class="title-gradient">Technologies</span></h2>
+        </div>
+        <div class="skills-showcase">
+          <div class="skills-category">
+            <h3><i class="fas fa-laptop-code"></i> Programming Languages</h3>
+            <div class="skills-list">
+            <!-- Languages -->
+
+  <div class="skill-item">
+    <i class="fab fa-python"></i>
+    <span class="name">Python</span>
+    <div class="bar"><div style="width:20%"></div></div>
+    <span class="percent">20%</span>
+  </div>
+<div class="skill-item">
+    <i class="fab fa-js"></i>
+    <span class="name">JavaScript</span>
+    <div class="bar"><div style="width:40%"></div></div>
+    <span class="percent">40%</span>
+  </div>
+  <div class="skill-item">
+    <i class="fas fa-desktop"></i>
+    <span class="name">C#</span>
+    <div class="bar"><div style="width:70%"></div></div>
+    <span class="percent">70%</span>
+  </div>
+
+  <div class="skill-item">
+    <i class="fas fa-mobile-alt"></i>
+    <span class="name">Flutter</span>
+    <div class="bar"><div style="width:60%"></div></div>
+    <span class="percent">60%</span>
+  </div>
+
+  <div class="skill-item">
+    <i class="fab fa-html5"></i>
+    <span class="name">HTML</span>
+    <div class="bar"><div style="width:80%"></div></div>
+    <span class="percent">80%</span>
+  </div>
+
+  <div class="skill-item">
+    <i class="fab fa-css3-alt"></i>
+    <span class="name">CSS</span>
+    <div class="bar"><div style="width:70%"></div></div>
+    <span class="percent">70%</span>
+  </div>
+
+  <div class="skill-item">
+    <i class="fab fa-react"></i>
+    <span class="name">React</span>
+    <div class="bar"><div style="width:40%"></div></div>
+    <span class="percent">40%</span>
+  </div>
+
+  <div class="skill-item">
+    <i class="fab fa-node-js"></i>
+    <span class="name">Node.js</span>
+    <div class="bar"><div style="width:35%"></div></div>
+    <span class="percent">35%</span>
+  </div>
+
+  <div class="skill-item">
+    <i class="fas fa-code"></i>
+    <span class="name">C++</span>
+    <div class="bar"><div style="width:40%"></div></div>
+    <span class="percent">40%</span>
+  </div>
+
+</div>
+          </div>
+          <div class="skills-category">
+            <h3><i class="fas fa-database"></i> Databases & Tools</h3>
+            <div class="skills-list">
+
+  <div class="skill-item">
+    <i class="fas fa-database"></i>
+    <span class="name">MS SQL Server</span>
+    <div class="bar"><div style="width:65%"></div></div>
+    <span class="percent">65%</span>
+  </div>
+
+  <div class="skill-item">
+    <i class="fas fa-database"></i>
+    <span class="name">MySQL</span>
+    <div class="bar"><div style="width:50%"></div></div>
+    <span class="percent">50%</span>
+  </div>
+
+  <div class="skill-item">
+    <i class="fas fa-database"></i>
+    <span class="name">SQLite</span>
+    <div class="bar"><div style="width:70%"></div></div>
+    <span class="percent">70%</span>
+  </div>
+
+  <div class="skill-item">
+    <i class="fab fa-git-alt"></i>
+    <span class="name">Git/GitHub</span>
+    <div class="bar"><div style="width:50%"></div></div>
+    <span class="percent">50%</span>
+  </div>
+
+  <div class="skill-item">
+    <i class="fas fa-code"></i>
+    <span class="name">Visual Studio</span>
+    <div class="bar"><div style="width:70%"></div></div>
+    <span class="percent">70%</span>
+  </div>
+
+  <div class="skill-item">
+    <i class="fas fa-file-excel"></i>
+    <span class="name">MS Office</span>
+    <div class="bar"><div style="width:70%"></div></div>
+    <span class="percent">70%</span>
+  </div>
+
+  <div class="skill-item">
+    <i class="fas fa-file-alt"></i>
+    <span class="name">Crystal Reports</span>
+    <div class="bar"><div style="width:70%"></div></div>
+    <span class="percent">70%</span>
+  </div>
+
+  <div class="skill-item">
+    <i class="fas fa-chart-bar"></i>
+    <span class="name">Stimulsoft Report</span>
+    <div class="bar"><div style="width:80%"></div></div>
+    <span class="percent">80%</span>
+  </div>
+<div class="skill-item">
+  <i class="fas fa-chart-line"></i>
+  <span class="name">Fast Report</span>
+  <div class="bar"><div style="width:50%"></div></div>
+  <span class="percent">50%</span>
+</div>
+</div>
+            </div>
+          </div>
+          <div class="skills-category">
+            <h3><i class="fas fa-heart"></i> Soft Skills</h3>
+            <div class="soft-skills">
+              <span>Teamwork</span>
+              <span>Problem Solving</span>
+              <span>Communication</span>
+              <span>Flexibility</span>
+              <span>Collaboration</span>
+              <span>Emotional Intelligence</span>
+              <span>Negotiation</span>
+              <span>Self-awareness</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">My recent work</span>
+          <h2 class="section-title">Featured <span class="title-gradient">Projects</span></h2>
+        </div>
+        <div class="projects-filter">
+          <button class="filter-btn active-filter" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="desktop">Desktop</button>
+          <button class="filter-btn" data-filter="database">Database</button>
+        </div>
+        <div class="projects-grid" id="projectsContainer"></div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get in touch</span>
+          <h2 class="section-title">Contact <span class="title-gradient">Me</span></h2>
+        </div>
+        <div class="contact-wrapper">
+          <div class="contact-form-card">
+            <h3><i class="fas fa-paper-plane"></i> Send a Message</h3>
+            <form id="contactForm">
+              <div class="input-group">
+                <input type="text" id="contactName" placeholder="Your Name" required>
+              </div>
+              <div class="input-group">
+                <input type="email" id="contactEmail" placeholder="Your Email" required>
+              </div>
+              <div class="input-group">
+                <textarea id="contactMsg" rows="5" placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+              <div id="formFeedback" class="form-feedback"></div>
+            </form>
+          </div>
+          <div class="contact-info-card">
+            <h3><i class="fas fa-address-card"></i> Connect With Me</h3>
+            <div class="contact-details">
+              <p><i class="fas fa-envelope"></i> <a href="mailto:firoozmohammad555@gmail.com">firoozmohammadi555@gmail.com</a></p>
+              <p><i class="fas fa-phone-alt"></i> <a href="tel:+93796551137">(+90) 5538020212</a></p>
+              <p><i class="fas fa-map-marker-alt"></i> Istanbul, Turkey / Herat, Afghanistan</p>
+            </div>
+            <div class="social-links">
+<a href="https://github.com/FiroozMohammadi" target="_blank">
+  <i class="fab fa-github"></i>
+</a>
+
+<a href="https://www.linkedin.com/in/firooz-mohammadi/" target="_blank">
+  <i class="fab fa-linkedin-in"></i>
+</a>
+
+<a href="https://t.me/Tabiban_Software" target="_blank">
+  <i class="fab fa-telegram-plane"></i>
+</a>
+
+<a href="https://wa.me/93796551136" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<a href="https://instagram.com/firoozmohammadi555" target="_blank">
+  <i class="fab fa-instagram"></i>
+</a>
+            </div>
+            <div class="contact-note">
+              <i class="fas fa-clock"></i> Response within 12 hours
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Firooz<span> Ahmad</span></h3>
+          <p>Software Developer</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      <div class="footer-social">
+
+  <a href="https://github.com/FiroozMohammadi" target="_blank">
+    <i class="fab fa-github"></i>
+  </a>
+
+  <a href="https://www.linkedin.com/in/firooz-mohammadi/" target="_blank">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+  <a href="https://instagram.com/firoozmohammadi555" target="_blank">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://t.me/Tabiban_Software" target="_blank">
+    <i class="fab fa-telegram"></i>
+  </a>
+
+  <a href="https://wa.me/93796551136" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+</div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Firooz Ahmad Muhammadi. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
