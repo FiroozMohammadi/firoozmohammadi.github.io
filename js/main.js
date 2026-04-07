@@ -110,6 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
       description: "A complete laboratory system for managing patients, test registration, cytology, culture & antibiogram, inventory, invoicing, user management, and financial reporting for doctors, laboratory, and companies.",
       tech: ["C#, WPF (.NET)", "SQL Server", "Stimulsoft Reports","Telegram Bot API"],
       github: "https://github.com/FiroozMohammadi/LMS",
+      download: "https://github.com/FiroozMohammadi/setups/LMS",
       image: "https://placehold.co/600x400/10b981/white?text=Laboratory MS",
       category: "desktop"
     },
@@ -118,6 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
       description: "A system for doctors to register patients, record vital signs and symptoms, and create prescriptions using predefined templates with only a few clicks, improving speed and accuracy in clinical workflow.",
       tech: ["C#, WPF (.NET)", "SQL Server", "Stimulsoft Reports"],
       github: "https://github.com/FiroozMohammadi/PMS",
+      download: "https://github.com/FiroozMohammadi/setups/DPS",
       image: "https://placehold.co/600x400/f59e0b/white?text=Prescription MS",
       category: "desktop"
     },
@@ -151,31 +153,49 @@ document.addEventListener('DOMContentLoaded', function() {
   const projectsContainer = document.getElementById('projectsContainer');
   
   function renderProjects(filter = 'all') {
-    if (!projectsContainer) return;
-    
-    const filteredProjects = filter === 'all' 
-      ? projectsData 
-      : projectsData.filter(project => project.category === filter);
-    
-    projectsContainer.innerHTML = filteredProjects.map(project => `
-      <div class="project-card">
-        <div class="project-img" style="background-image: url('${project.image}')">
-          <div class="project-overlay">
-            <div class="project-links">
-              <a href="${project.github}" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
+  if (!projectsContainer) return;
+  
+  const filteredProjects = filter === 'all' 
+    ? projectsData 
+    : projectsData.filter(project => project.category === filter);
+
+  projectsContainer.innerHTML = filteredProjects.map(project => `
+    <div class="project-card">
+
+      <div class="project-img" style="background-image: url('${project.image}')">
+        <div class="project-overlay">
+          
+          <div class="project-links">
+
+            <!-- GitHub Button -->
+            <a href="${project.github}" target="_blank" title="View Code">
+              <i class="fab fa-github"></i>
+            </a>
+
+            <!-- Download Button -->
+            ${project.download ? `
+              <a href="${project.download}" target="_blank" title="Download App">
+                <i class="fas fa-download"></i>
+              </a>
+            ` : ""}
+
           </div>
-        </div>
-        <div class="project-info">
-          <h3>${project.name}</h3>
-          <p>${project.description}</p>
-          <div class="project-tech">
-            ${project.tech.map(t => `<span>${t}</span>`).join('')}
-          </div>
+
         </div>
       </div>
-    `).join('');
-  }
+
+      <div class="project-info">
+        <h3>${project.name}</h3>
+        <p>${project.description}</p>
+
+        <div class="project-tech">
+          ${project.tech.map(t => `<span>${t}</span>`).join('')}
+        </div>
+      </div>
+
+    </div>
+  `).join('');
+}
   
   // Initial render
   if (projectsContainer) {

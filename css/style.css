@@ -737,7 +737,12 @@ body.dark .theme-toggle .fa-moon { display: none; }
 }
 
 @media (max-width: 768px) {
+  .contact-wrapper {
+  grid-template-columns: 1fr; 
+    gap: 1.2rem;
+}
   .projects-grid { grid-template-columns: 1fr; }
+
 }
 
 /* Contact Section */
