@@ -98,52 +98,52 @@ document.addEventListener('DOMContentLoaded', function() {
   // ---------- PROJECTS DATA ----------
   const projectsData = [
     {
-      name: "Hospital Management System",
-      description: "A comprehensive system for managing patients, doctors, appointments, and medical records with real-time updates and reporting.",
-      tech: ["Java", "MySQL", "Swing"],
-      github: "https://github.com/firoozahmad/hospital-management",
-      image: "https://placehold.co/600x400/6366f1/white?text=Hospital+MS",
+      name: "Hospital Accounting System",
+      description: "A full-featured system for managing hospital operations, including doctors, patients, and departments. It generates financial reports (daily, weekly, monthly) and integrates with a Telegram bot to send automated updates to doctors and management.",
+      tech: ["C#, WPF (.NET)", "SQL Server", "Stimulsoft Reports","Telegram Bot API"],
+      github: "https://github.com/FiroozMohammadi/HAS",
+      image: "https://placehold.co/600x400/6366f1/white?text= Hospital AS",
       category: "desktop"
     },
     {
-      name: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with product management, cart system, payment integration, and admin dashboard.",
-      tech: ["JavaScript", "React", "Node.js", "MongoDB"],
-      github: "https://github.com/firoozahmad/ecommerce-platform",
-      image: "https://placehold.co/600x400/10b981/white?text=E-Commerce",
-      category: "web"
-    },
-    {
-      name: "Inventory Management System",
-      description: "Desktop application for tracking inventory, managing suppliers, and generating sales reports with analytics.",
-      tech: ["C++", "SQL Server", "Qt"],
-      github: "https://github.com/firoozahmad/inventory-system",
-      image: "https://placehold.co/600x400/f59e0b/white?text=Inventory+MS",
+      name: "Laboratory Management System",
+      description: "A complete laboratory system for managing patients, test registration, cytology, culture & antibiogram, inventory, invoicing, user management, and financial reporting for doctors, laboratory, and companies.",
+      tech: ["C#, WPF (.NET)", "SQL Server", "Stimulsoft Reports","Telegram Bot API"],
+      github: "https://github.com/FiroozMohammadi/LMS",
+      image: "https://placehold.co/600x400/10b981/white?text=Laboratory MS",
       category: "desktop"
     },
     {
-      name: "Student Information System",
-      description: "Web-based platform for managing student records, grades, attendance, and course registration with parent portal.",
-      tech: ["PHP", "MySQL", "Bootstrap"],
-      github: "https://github.com/firoozahmad/student-info-system",
-      image: "https://placehold.co/600x400/8b5cf6/white?text=Student+SIS",
+      name: "Prescription Management System",
+      description: "A system for doctors to register patients, record vital signs and symptoms, and create prescriptions using predefined templates with only a few clicks, improving speed and accuracy in clinical workflow.",
+      tech: ["C#, WPF (.NET)", "SQL Server", "Stimulsoft Reports"],
+      github: "https://github.com/FiroozMohammadi/PMS",
+      image: "https://placehold.co/600x400/f59e0b/white?text=Prescription MS",
+      category: "desktop"
+    },
+    {
+      name: "User Management System",
+      description: "A Flutter-based mobile application connected to an ASP.NET Core Web API and SQL Server database. It allows managing customers, activating software licenses, and controlling users of multiple systems through a centralized mobile dashboard.",
+      tech: ["Mobile (Flutter)", "API (ASP.NET Core)", "SQL Server"],
+      github: "https://github.com/FiroozMohammadi/UMS",
+      image: "https://placehold.co/600x400/8b5cf6/white?text=Tabiban",
+      category: "mobile"
+    },
+    {
+      name: "React Blog Web Application",
+      description: "A responsive blog platform built with React.js and Material-UI featuring card-based post layouts, reusable components, and a clean modern UI with mobile-friendly design.",
+      tech: ["React.js","Material-UI (MUI v4)","JavaScript (ES6+)", "HTML5", "CSS-in-JS"],
+      github: "https://github.com/FiroozMohammadi/Weblog",
+      image: "https://placehold.co/600x400/ef4444/white?text=Weblog",
       category: "web"
     },
     {
-      name: "Employee Payroll System",
-      description: "Database-driven payroll management system with automated salary calculations, tax deductions, and report generation.",
-      tech: ["C#", "SQL Server", ".NET"],
-      github: "https://github.com/firoozahmad/payroll-system",
-      image: "https://placehold.co/600x400/ef4444/white?text=Payroll",
-      category: "database"
-    },
-    {
-      name: "Task Manager API",
-      description: "RESTful API for task management with user authentication, task CRUD operations, and real-time notifications.",
-      tech: ["Python", "Django", "PostgreSQL"],
-      github: "https://github.com/firoozahmad/task-manager-api",
-      image: "https://placehold.co/600x400/06b6d4/white?text=Task+API",
-      category: "web"
+      name: "Personal Accounting System",
+      description: "A Flutter and SQLite-based offline application for managing personal finances, including income, expenses, sales, and debts. It is designed for simple and fast financial tracking for individuals and small businesses.",
+      tech: ["Flutter", "SQLite"],
+      github: "https://github.com/FiroozMohammadi/PAS",
+      image: "https://placehold.co/600x400/06b6d4/white?text=Personal+AS",
+      category: "mobile"
     }
   ];
   
