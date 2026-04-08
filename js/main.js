@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
       description: "A complete laboratory system for managing patients, test registration, cytology, culture & antibiogram, inventory, invoicing, user management, and financial reporting for doctors, laboratory, and companies.",
       tech: ["C#, WPF (.NET)", "SQL Server", "Stimulsoft Reports","Telegram Bot API"],
       github: "https://github.com/FiroozMohammadi/LMS",
-      download: "https://github.com/FiroozMohammadi/setups/LMS",
+      download: "https://github.com/FiroozMohammadi/setups/LMS.zip",
       image: "https://placehold.co/600x400/10b981/white?text=Laboratory MS",
       category: "desktop"
     },
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
       description: "A system for doctors to register patients, record vital signs and symptoms, and create prescriptions using predefined templates with only a few clicks, improving speed and accuracy in clinical workflow.",
       tech: ["C#, WPF (.NET)", "SQL Server", "Stimulsoft Reports"],
       github: "https://github.com/FiroozMohammadi/PMS",
-      download: "https://github.com/FiroozMohammadi/setups/DPS",
+      download: "https://github.com/FiroozMohammadi/setups/DPS.zip",
       image: "https://placehold.co/600x400/f59e0b/white?text=Prescription MS",
       category: "desktop"
     },
