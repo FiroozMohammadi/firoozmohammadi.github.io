@@ -226,76 +226,72 @@ document.addEventListener('DOMContentLoaded', function() {
   document.body.removeChild(link);
 });
   
-  // ---------- CONTACT FORM HANDLER ----------
-  const contactForm = document.getElementById('contactForm');
-  const formFeedback = document.getElementById('formFeedback');
-  
-  if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      
-      const name = document.getElementById('contactName').value;
-      const email = document.getElementById('contactEmail').value;
-      const message = document.getElementById('contactMsg').value;
-      
-      // Validation
-      if (!name || !email || !message) {
-        showFormFeedback('Please fill in all fields', 'error');
-        return;
-      }
-      
-      if (!isValidEmail(email)) {
-        showFormFeedback('Please enter a valid email address', 'error');
-        return;
-      }
-      
-      showFormFeedback('Sending message...', 'info');
-      
-      // Simulate sending
-      setTimeout(() => {
-        showFormFeedback('Message sent successfully! I will get back to you soon.', 'success');
-        contactForm.reset();
-      }, 1500);
-    });
-  }
-  
-  function isValidEmail(email) {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email);
-  }
-  
-  function showFormFeedback(message, type) {
-    if (formFeedback) {
-      formFeedback.textContent = message;
-      formFeedback.className = 'form-feedback ' + type;
-      
-      setTimeout(() => {
-        if (formFeedback) {
-          formFeedback.textContent = '';
-          formFeedback.className = 'form-feedback';
-        }
-      }, 5000);
+ const contactForm = document.getElementById('contactForm');
+const formFeedback = document.getElementById('formFeedback');
+
+// INIT EmailJS
+emailjs.init("XXX");
+
+if (contactForm) {
+  contactForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById('contactName').value;
+    const email = document.getElementById('contactEmail').value;
+    const message = document.getElementById('contactMsg').value;
+
+    // Validation
+    if (!name || !email || !message) {
+      showFormFeedback('Please fill in all fields', 'error');
+      return;
     }
-  }
-  
-  // Toast notification
-  function showToast(message, type) {
-    const toast = document.createElement('div');
-    toast.className = `toast toast-${type}`;
-    toast.innerHTML = `
-      <i class="fas ${type === 'success' ? 'fa-check-circle' : 'fa-info-circle'}"></i>
-      <span>${message}</span>
-    `;
-    document.body.appendChild(toast);
-    
+
+    if (!isValidEmail(email)) {
+      showFormFeedback('Please enter a valid email address', 'error');
+      return;
+    }
+
+    showFormFeedback('Sending message...', 'info');
+
+    // REAL EMAIL SEND
+    emailjs.send(
+      "SSS",       
+      "TTT",      
+      {
+        from_name: name,
+        from_email: email,
+        message: message
+      }
+    )
+    .then(() => {
+      showFormFeedback('Message sent successfully ✅', 'success');
+      contactForm.reset();
+    })
+    .catch((error) => {
+      showFormFeedback('Failed to send message ❌', 'error');
+      console.log(error);
+    });
+  });
+}
+
+// Email validation
+function isValidEmail(email) {
+  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(email);
+}
+
+// UI feedback
+function showFormFeedback(message, type) {
+  if (formFeedback) {
+    formFeedback.textContent = message;
+    formFeedback.className = 'form-feedback ' + type;
+
     setTimeout(() => {
-      toast.style.animation = 'slideOut 0.3s ease';
-      setTimeout(() => {
-        if (toast.parentNode) toast.parentNode.removeChild(toast);
-      }, 300);
-    }, 3000);
+      formFeedback.textContent = '';
+      formFeedback.className = 'form-feedback';
+    }, 5000);
   }
-  
+}
   // ---------- ANIMATE SKILL BARS ON SCROLL ----------
   let skillsAnimated = false;
   
